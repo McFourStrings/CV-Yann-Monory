@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+
+
+
+body {
+    overflow-x: hidden;
+
+    background-color: #262641;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    background-color: darkorange;
+    width: 80vw;
+    margin-left: 6%;
+    margin-top: 3%;
+    padding: 3%;
+    border: 1px solid black;
+    border-bottom: none;
+
+}
+
+#photo {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 15%;
+    margin-right: 5%;
+}
+
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titres {
+    font-size: 2rem;
+    margin-bottom: 3%;
+    margin-top: 1%;
+
+}
+
+.SousTitres {
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+#apropos {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 2%;
+    background-color: #082050;
+    margin-left: 6%;
+    padding: 3%;
+    padding-bottom: 0;
+    width: 80vw;
+    border: 1px solid black;
+    border-bottom: none;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+
+}
+
+#CV {
+    flex: 1;
+    background-color: #082050;
+    margin-left: 6%;
+    margin-bottom: 6%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    border: 1px solid black;
+    border-top: none;
+}
+
+footer {
+    width: 80%;
+    ;
+    text-align: start;
+    color: white;
+    padding-top: 3%;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.separateur1 {
+    margin-bottom: 2%;
+    border: 1px solid white;
+    width: 50%;
+
+
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid black;
+    background-color: darkorange;
+    padding: 3%;
+    justify-content: space-evenly;
+
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+
+    }
+
+    #boutons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 5%;
+
+
+    }
+
+    .separateur {
+        margin-bottom: 2%;
+        border: 1px solid black;
+        width: 50%;
+
+    }
+
+
+
+
+}
+
+li {
+    list-style: none;
+}
+
+
+
+.left {
+    flex: 2;
+    color: white;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+#competences {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#comptech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#comptrans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sepvert {
+    margin-bottom: 2%;
+    border: 1px solid white;
+    height: 18vh;
+}
+
+.dot {
+    list-style: circle;
+}
+
+
+#print {
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 0.95rem;
+        overflow-x: hidden;
+        background-color: #082050;
+
+    }
+
+    header,
+    #apropos,
+    #CV {
+        width: 95%;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        border: none;
+
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 6% 5%;
+    }
+
+    #photo {
+        width: 45%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .titres {
+        font-size: 1.8rem;
+    }
+
+    /* Section À propos */
+    #apropos {
+        font-size: 1rem;
+        padding: 8% 6%;
+        text-align: center;
+    }
+
+    
+    #CV {
+        margin-bottom: 10%;
+        padding: 8% 6%;
+
+    }
+
+  
+    .row {
+        flex-direction: column;
+       
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left,
+    .right {
+        flex: none;
+        width: 95%;
+     
+        max-width: 95%;
+    }
+
+  
+    .right {
+        order: 2;
+       
+        background-color: darkorange;
+        padding: 6%;
+        border: 1px solid black;
+        text-align: center;
+       
+        margin: 0 auto;
+       
+    }
+
+   
+    #boutons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+
+    
+    #competences {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .sepvert {
+        display: none;
+    }
+
+    
+    footer {
+        width: 95%;
+        margin: 0 auto;
+        padding: 8% 5%;
+        text-align: center;
+      
+    }
+
+    .separateur1 {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .separateur{
+        display: none;
+    }
+}
+
+
+@media print {
+    @page {
+        size: A4;
+        margin: 5mm !important;
+    }
+
+    * {
+        color: black !important;
+        text-shadow: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+        color: black !important;
+        font-size: 0.8rem !important;
+        line-height: 1.2 !important;
+        overflow: visible !important;
+    }
+
+    header, #apropos, #CV {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 3px 0 !important;
+        border: none !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+    }
+
+    #photo {
+        width: 8% !important;
+        margin-right: 2% !important;
+        margin-bottom: 0 !important;
+    }
+
+    .titres {
+        font-size: 1.1rem !important;
+        margin: 2px 0 !important;
+    }
+
+    .SousTitres {
+        margin: 2px 0 !important;
+    }
+
+    #apropos {
+        padding: 3px 0 !important;
+    }
+
+    #CV {
+        padding: 3px 0 !important;
+    }
+
+    .row {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+    }
+
+    .left, .right {
+        width: 100% !important;
+        padding: 3px 0 !important;
+        border: none !important;
+    }
+
+    #competences {
+        flex-direction: row !important;
+        gap: 10px !important;
+    }
+
+    .separateur, .separateur1, .sepvert, #boutons, footer {
+        display: none !important;
+    }
+
+    li {
+        margin: 1px 0 !important;
+    }
+
+    p {
+        margin: 1px 0 !important;
+    }
+
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+}
